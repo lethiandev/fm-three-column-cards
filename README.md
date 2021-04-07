@@ -17,7 +17,7 @@ Technologies used to create the solution:
 
 ## Preview
 
-Live preview is available on GitHub Pages, served from directory `docs/` directly:
+Live preview is available on GitHub Pages, served from `docs/` directly:
 <br>https://lethiandev.github.io/fm-three-column-cards
 
 ## References
