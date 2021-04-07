@@ -33,7 +33,7 @@ export default defineComponent({
         </header>
         <p>{props.transport.description}</p>
         <footer>
-          <VButton variant={props.variant}>Learn more</VButton>
+          <VButton variant={props.variant}>Learn More</VButton>
         </footer>
       </VCard>
     )
