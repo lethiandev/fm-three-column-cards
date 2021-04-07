@@ -2,7 +2,6 @@ import { FunctionalComponent } from 'vue'
 import styles from '@/scss/buttons.module.scss'
 
 interface VButtonAttributes {
-  class?: string
   variant?: 'first' | 'second' | 'third'
 }
 
