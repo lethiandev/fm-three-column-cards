@@ -1,34 +1,37 @@
 import { defineComponent } from 'vue'
-import VButton from '@/components/VButton'
-import VCard from '@/components/VCard'
+import { Transport } from '@/components/VTransport'
+import VTransportList from '@/components/VTransportList'
 import styles from '@/scss/layout.module.scss'
+
+import iconSedans from '@/assets/icon-sedans.svg'
+import iconSuvs from '@/assets/icon-suvs.svg'
+import iconLuxury from '@/assets/icon-luxury.svg'
 
 export default defineComponent({
   name: 'Home',
   setup() {
+    const transports: Transport[] = [
+      {
+        icon: iconSedans,
+        title: 'Sedans',
+        description: 'Lorem ipsum dolor sit amet',
+      },
+      {
+        icon: iconSuvs,
+        title: 'SUVs',
+        description: 'Lorem ipsum dolor sit amet',
+      },
+      {
+        icon: iconLuxury,
+        title: 'Luxury',
+        description: 'Lorem ipsum dolor sit amet',
+      },
+    ]
+
     return () => (
       <main class={styles.main}>
         <div class={styles.container}>
-          <div class={styles.columns}>
-            <VCard variant="first">
-              <h1>Home page</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <VButton variant="first">Hello, world!</VButton>
-            </VCard>
-            <VCard variant="second">
-              <h1>Home page</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <VButton variant="second">Hello, world!</VButton>
-            </VCard>
-            <VCard variant="third">
-              <h1>Home page</h1>
-              <p>Lorem ipsum dolor sit amet</p>
-              <VButton variant="third">Hello, world!</VButton>
-            </VCard>
-          </div>
+          <VTransportList items={transports} />
         </div>
       </main>
     )
