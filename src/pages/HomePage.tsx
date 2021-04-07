@@ -12,14 +12,20 @@ export default defineComponent({
           <div class={styles.columns}>
             <VCard variant="first">
               <h1>Home page</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
               <VButton variant="first">Hello, world!</VButton>
             </VCard>
             <VCard variant="second">
               <h1>Home page</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <VButton variant="second">Hello, world!</VButton>
             </VCard>
             <VCard variant="third">
               <h1>Home page</h1>
+              <p>Lorem ipsum dolor sit amet</p>
               <VButton variant="third">Hello, world!</VButton>
             </VCard>
           </div>
