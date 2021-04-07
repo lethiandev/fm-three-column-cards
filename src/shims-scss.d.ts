@@ -1,4 +1,4 @@
 declare module '*.scss' {
-  const scssModule: { [className: string]: string }
+  const scssModule: Record<string, string>
   export default scssModule
 }
