@@ -5,16 +5,19 @@ import VTransportList from '@/components/VTransportList'
 const testItems: Transport[] = [
   {
     icon: '/assets/test-icon-1.png',
+    iconAlt: 'Test icon #1',
     title: 'Test transport #1',
     description: 'Test #1',
   },
   {
     icon: '/assets/test-icon-2.png',
+    iconAlt: 'Test icon #2',
     title: 'Test transport #2',
     description: 'Test #2',
   },
   {
     icon: '/assets/test-icon-3.png',
+    iconAlt: 'Test icon #3',
     title: 'Test transport #3',
     description: 'Test #3',
   },

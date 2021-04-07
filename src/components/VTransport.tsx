@@ -6,6 +6,7 @@ import VButton from './VButton'
 
 export interface Transport {
   icon: string
+  iconAlt: string
   title: string
   description: string
 }
@@ -28,7 +29,7 @@ export default defineComponent({
     return () => (
       <VCard class={className} variant={props.variant}>
         <header>
-          <img src={props.transport.icon} />
+          <img src={props.transport.icon} alt={props.transport.iconAlt} />
           <h1>{props.transport.title}</h1>
         </header>
         <p>{props.transport.description}</p>

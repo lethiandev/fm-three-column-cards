@@ -13,6 +13,7 @@ export default defineComponent({
     const transports: Transport[] = [
       {
         icon: iconSedans,
+        iconAlt: 'Sedan car type icon',
         title: 'Sedans',
         description:
           'Choose a sedan for its affordability and excellent fuel economy. ' +
@@ -20,6 +21,7 @@ export default defineComponent({
       },
       {
         icon: iconSuvs,
+        iconAlt: 'SUV car type icon',
         title: 'SUVs',
         description:
           'Take an SUV for its spacious interior, power, and versatility. ' +
@@ -27,6 +29,7 @@ export default defineComponent({
       },
       {
         icon: iconLuxury,
+        iconAlt: 'Luxury car type icon',
         title: 'Luxury',
         description:
           'Cruise in the best car brands without the bloated prices. ' +

@@ -4,6 +4,7 @@ import VButton from '@/components/VButton'
 
 const transport: Transport = {
   icon: '/assets/my-test-icon.png',
+  iconAlt: 'Test icon',
   title: 'Test transport title',
   description: 'Test transport description',
 }
