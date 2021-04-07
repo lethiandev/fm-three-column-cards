@@ -1,16 +1,16 @@
 import { FunctionalComponent } from 'vue'
+import { variantClass, Variants } from '@/utils/variant'
 import styles from '@/scss/buttons.module.scss'
 
 interface VButtonAttributes {
-  variant?: 'first' | 'second' | 'third'
+  variant?: Variants
 }
 
 const VButton: FunctionalComponent<VButtonAttributes> = (props, { slots }) => {
-  const variantName = `variant-${props.variant}`
-  const variantClass = styles[variantName] || ''
+  const variantClassName = variantClass(styles, props.variant)
 
   return (
-    <button class={`${styles.button} ${variantClass}`}>
+    <button class={[styles.button, variantClassName]}>
       {slots.default?.()}
     </button>
   )

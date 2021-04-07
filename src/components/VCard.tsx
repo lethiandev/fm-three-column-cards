@@ -1,16 +1,16 @@
 import { FunctionalComponent } from 'vue'
+import { variantClass, Variants } from '@/utils/variant'
 import styles from '@/scss/cards.module.scss'
 
 interface VCardAttributes {
-  variant?: 'first' | 'second' | 'third'
+  variant?: Variants
 }
 
 const VCard: FunctionalComponent<VCardAttributes> = (props, { slots }) => {
-  const variantName = `variant-${props.variant}`
-  const variantClass = styles[variantName] || ''
+  const variantClassName = variantClass(styles, props.variant)
 
   return (
-    <section class={`${styles.card} ${variantClass}`}>
+    <section class={[styles.button, variantClassName]}>
       {slots.default?.()}
     </section>
   )
