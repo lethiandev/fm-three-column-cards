@@ -7,7 +7,7 @@ export default defineComponent({
   name: 'Home',
   setup() {
     return () => (
-      <main class={styles.container}>
+      <main class={styles.main}>
         <div class={styles.columns}>
           <VCard variant="first">
             <h1>Home page</h1>
