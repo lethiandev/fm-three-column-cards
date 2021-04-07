@@ -14,17 +14,23 @@ export default defineComponent({
       {
         icon: iconSedans,
         title: 'Sedans',
-        description: 'Lorem ipsum dolor sit amet',
+        description:
+          'Choose a sedan for its affordability and excellent fuel economy. ' +
+          'Ideal for cruising in the city or on your next road trip.',
       },
       {
         icon: iconSuvs,
         title: 'SUVs',
-        description: 'Lorem ipsum dolor sit amet',
+        description:
+          'Take an SUV for its spacious interior, power, and versatility. ' +
+          'Perfect for your next family vacation and off-road adventures.',
       },
       {
         icon: iconLuxury,
         title: 'Luxury',
-        description: 'Lorem ipsum dolor sit amet',
+        description:
+          'Cruise in the best car brands without the bloated prices. ' +
+          'Enjoy the enhanced comfort of a luxury rental and arrive in style.',
       },
     ]
 
