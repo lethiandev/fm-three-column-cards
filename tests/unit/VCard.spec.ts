@@ -2,9 +2,9 @@ import { mount } from '@vue/test-utils'
 import VCard from '@/components/VCard'
 
 describe('VCard.tsx', () => {
-  it('should render as section', () => {
+  it('should render as article', () => {
     const wrapper = mount(VCard)
-    expect(wrapper.element.tagName).toEqual('SECTION')
+    expect(wrapper.element.tagName).toEqual('ARTICLE')
   })
 
   it('should render content', () => {
