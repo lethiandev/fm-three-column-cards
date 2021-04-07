@@ -1,5 +1,11 @@
 @use 'variables' as vars;
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   background: vars.$color-white;
   font-family: vars.$font-family;
