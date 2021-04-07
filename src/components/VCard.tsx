@@ -3,6 +3,7 @@ import { variantClass, Variants } from '@/utils/variant'
 import styles from '@/scss/cards.module.scss'
 
 interface VCardAttributes {
+  class?: string
   variant?: Variants
 }
 
