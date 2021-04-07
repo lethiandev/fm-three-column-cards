@@ -1,7 +1,7 @@
 @use 'variables' as vars;
 
 .button {
-  padding: 14px 30px;
+  padding: 14px 30px 15px 30px;
   background: vars.$color-white;
   vertical-align: middle;
   font: inherit;
