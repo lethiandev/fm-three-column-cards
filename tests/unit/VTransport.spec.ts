@@ -1,24 +1,36 @@
 import { mount } from '@vue/test-utils'
-import VTransport from '@/components/VTransport'
+import VTransport, { Transport } from '@/components/VTransport'
+import VButton from '@/components/VButton'
+
+const transport: Transport = {
+  icon: '/assets/my-test-icon.png',
+  title: 'Test transport title',
+  description: 'Test transport description',
+}
+
+function factorTransportWrapper() {
+  return mount(VTransport, {
+    props: { transport },
+  })
+}
 
 describe('VTransport.tsx', () => {
   it('should render as article', () => {
-    const wrapper = mount(VTransport)
+    const wrapper = factorTransportWrapper()
     expect(wrapper.element.tagName).toEqual('ARTICLE')
   })
 
-  it('should render slots', () => {
-    const slots = {
-      header: 'Header test content!',
-      default: 'Default test content!',
-      footer: 'Footer default content!',
-    }
-    const wrapper = mount(VTransport, {
-      slots,
-    })
+  it('should render provided content', () => {
+    const wrapper = factorTransportWrapper()
 
-    expect(wrapper.find('header').text()).toEqual(slots.header)
-    expect(wrapper.find('div').text()).toEqual(slots.default)
-    expect(wrapper.find('footer').text()).toEqual(slots.footer)
+    expect(wrapper.find('img').attributes('src')).toEqual(transport.icon)
+    expect(wrapper.find('header').text()).toEqual(transport.title)
+    expect(wrapper.find('p').text()).toEqual(transport.description)
+    expect(wrapper.find('footer').text()).toEqual('Learn more')
+  })
+
+  it('should render button', () => {
+    const wrapper = factorTransportWrapper()
+    expect(wrapper.findComponent(VButton).exists()).toBeTruthy()
   })
 })

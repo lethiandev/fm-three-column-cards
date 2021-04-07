@@ -5,10 +5,6 @@
   background: vars.$color-white;
   color: vars.$color-muted;
   box-sizing: border-box;
-  min-height: 500px;
-
-  display: grid;
-  grid-template: auto 1fr auto / 1fr;
 
   @each $name, $color in vars.$colors {
     &.variant-#{$name} {
@@ -25,6 +21,12 @@
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
   }
+}
+
+.card-transport {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+  min-height: 500px;
 }
 
 .card h1 {
