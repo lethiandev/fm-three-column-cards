@@ -9,7 +9,7 @@ export default defineComponent({
       <main>
         <VCard variant="first">
           <h1>Home page</h1>
-          <VButton>Hello, world!</VButton>
+          <VButton variant="first">Hello, world!</VButton>
         </VCard>
       </main>
     )
