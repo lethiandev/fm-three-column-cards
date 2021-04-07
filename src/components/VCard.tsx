@@ -10,7 +10,7 @@ const VCard: FunctionalComponent<VCardAttributes> = (props, { slots }) => {
   const variantClassName = variantClass(styles, props.variant)
 
   return (
-    <section class={[styles.button, variantClassName]}>
+    <section class={[styles.card, variantClassName]}>
       {slots.default?.()}
     </section>
   )
