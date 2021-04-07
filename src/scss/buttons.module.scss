@@ -1,10 +1,11 @@
 @use 'variables' as vars;
 
 .button {
-  padding: 16px 32px;
+  padding: 14px 30px;
   background: vars.$color-white;
   vertical-align: middle;
   font: inherit;
+  line-height: 1;
   border: solid 2px vars.$color-white;
   border-radius: 1024px;
   outline: none;
