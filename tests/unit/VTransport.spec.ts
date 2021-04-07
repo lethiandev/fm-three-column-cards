@@ -26,7 +26,7 @@ describe('VTransport.tsx', () => {
     expect(wrapper.find('img').attributes('src')).toEqual(transport.icon)
     expect(wrapper.find('header').text()).toEqual(transport.title)
     expect(wrapper.find('p').text()).toEqual(transport.description)
-    expect(wrapper.find('footer').text()).toEqual('Learn more')
+    expect(wrapper.find('footer').text()).toEqual('Learn More')
   })
 
   it('should render button', () => {
