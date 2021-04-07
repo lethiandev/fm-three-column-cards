@@ -1,0 +1,14 @@
+@use 'variables' as vars;
+
+.card {
+  padding: 24px;
+  background: vars.$color-white;
+  border-radius: 6px;
+  color: vars.$color-muted;
+
+  @each $name, $color in vars.$colors {
+    &.variant-#{$name} {
+      background-color: $color;
+    }
+  }
+}
