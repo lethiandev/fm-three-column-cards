@@ -1,0 +1,19 @@
+$color-first: hsl(31, 77%, 52%);
+$color-second: hsl(184, 100%, 22%);
+$color-third: hsl(179, 100%, 13%);
+
+$color-white: hsl(0, 0%, 95%);
+$color-muted: hsla(0, 0%, 100%, 0.75);
+
+$font-size: 15px;
+$font-family: 'Lexend Deca', sans-serif;
+$font-family-heading: 'Big Shoulders Display', cursive;
+
+$size-1: 1em;
+$size-2: 2em;
+
+$colors: (
+  'first': $color-first,
+  'second': $color-second,
+  'third': $color-third,
+);
