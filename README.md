@@ -1,5 +1,8 @@
 # Frontend Mentor - 3-column preview card component
 
+![Desktop Screenshot](media/screenshot-1.png)
+![Mobile Screenshot](media/screenshot-2.png)
+
 This project is a Frontend Mentor challenge coded entirely for practising purpose. The challenge was to build three-column preview card component and to make the solution as close to the design as possible, with responsive layout to support mobile devices.
 
 The goal was to implement the challenge entirely in VueJS v3 using latest TypeScript features, exploring JSX solutions and CSS modules. The project has also unit tests based on Jest framework.
