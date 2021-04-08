@@ -30,7 +30,7 @@ export default defineComponent({
       <VCard class={className} variant={props.variant}>
         <header>
           <img src={props.transport.icon} alt={props.transport.iconAlt} />
-          <h1>{props.transport.title}</h1>
+          <h2>{props.transport.title}</h2>
         </header>
         <p>{props.transport.description}</p>
         <footer>
