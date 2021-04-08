@@ -24,10 +24,8 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const className = styles['card-transport']
-
     return () => (
-      <VCard class={className} variant={props.variant}>
+      <VCard class={styles.cardTransport} variant={props.variant}>
         <header>
           <img src={props.transport.icon} alt={props.transport.iconAlt} />
           <h2>{props.transport.title}</h2>
