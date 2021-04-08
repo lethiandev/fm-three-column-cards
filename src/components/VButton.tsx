@@ -9,11 +9,7 @@ interface VButtonAttributes {
 const VButton: FunctionalComponent<VButtonAttributes> = (props, { slots }) => {
   const variantClassName = variantClass(styles, props.variant)
 
-  return (
-    <button class={[styles.button, variantClassName]}>
-      {slots.default?.()}
-    </button>
-  )
+  return <a class={[styles.button, variantClassName]}>{slots.default?.()}</a>
 }
 
 export default VButton

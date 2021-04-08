@@ -2,11 +2,11 @@ import { mount } from '@vue/test-utils'
 import VButton from '@/components/VButton'
 
 describe('VButton.tsx', () => {
-  it('should render as button', () => {
+  it('should render as hyperlink', () => {
     const wrapper = mount(VButton)
 
     expect(wrapper.exists()).toBeTruthy()
-    expect(wrapper.element.tagName).toEqual('BUTTON')
+    expect(wrapper.element.tagName).toEqual('A')
   })
 
   it('should render content', () => {

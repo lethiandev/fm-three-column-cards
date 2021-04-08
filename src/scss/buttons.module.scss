@@ -5,10 +5,12 @@
   background: vars.$color-white;
   vertical-align: middle;
   font: inherit;
+  text-decoration: none;
   line-height: 1;
   border: solid 2px vars.$color-white;
   border-radius: 1024px;
   outline: none;
+  display: inline-block;
   cursor: pointer;
 
   @each $name, $color in vars.$colors {
